@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { Typography, ThemeProvider } from "@mui/material";
+import { Typography, ThemeProvider, Container, Box } from "@mui/material";
 import { darkTheme, lightTheme } from "src/styles/Themes";
 import "./App.css";
 
