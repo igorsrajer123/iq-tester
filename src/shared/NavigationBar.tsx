@@ -37,9 +37,19 @@ const NavigationBar = () => {
         </Hidden>
 
         <NavigationGridItem item xs={1.5} md={2}>
-          <NavigationSelect displayEmpty value="">
+          <NavigationSelect
+            displayEmpty
+            value=""
+            MenuProps={{
+              PaperProps: {
+                style: {
+                  backgroundColor: "white", // Set your desired background color
+                },
+              },
+            }}
+          >
             <MenuItem disabled value="">
-              + More Tests
+              <NakedLink to={""}>+ More Tests</NakedLink>
             </MenuItem>
             <MenuItem>
               <NakedLink to={""}>Special Test One</NakedLink>

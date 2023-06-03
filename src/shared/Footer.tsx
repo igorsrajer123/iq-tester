@@ -1,4 +1,4 @@
-import { Box, Grid, IconButton, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import DisplayImage from "src/shared/DisplayImage";
 import { Black } from "src/styles/ColorPalette";
 import Logo from "src/assets/iqhaven.webp";

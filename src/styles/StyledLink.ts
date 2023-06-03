@@ -7,7 +7,7 @@ import { lightTheme } from "src/styles/Themes";
 export const NakedLink = styled(Link)({
   textDecoration: "none",
   fontFamily: lightTheme.typography.fontFamily,
-  color: Black.Regular,
+  color: Black.Light,
 });
 
 export const OceanLink = styled(Link)({
