@@ -1,5 +1,6 @@
-import { Grid, Rating, Typography } from "@mui/material";
+import { Box, Grid, Rating, Typography } from "@mui/material";
 import React from "react";
+import BrainIcon from "src/icons/BrainIcon";
 import NumberOfTasksIcon from "src/icons/NumberOfTasksIcon";
 import { Black, Orange } from "src/styles/ColorPalette";
 
@@ -47,9 +48,37 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
       </Grid>
 
       <Grid container item xs={12}>
-        <Grid item xs={6}>
-          <NumberOfTasksIcon width={32} height={32} />
-          <Typography>{numberOfTasks} IQ-related items</Typography>
+        <Grid
+          container
+          item
+          xs={6}
+          display="flex"
+          alignItems="flex-start"
+          flexDirection="column"
+        >
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <NumberOfTasksIcon width={32} height={32} />
+            <Typography ml={1} color={Black.Light}>
+              {numberOfTasks} IQ-related items
+            </Typography>
+          </Box>
+          <Box
+            mt={2}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <BrainIcon width={32} height={32} />
+            <Typography ml={1} color={Black.Light}>
+              IQ up to {iqCap}
+            </Typography>
+          </Box>
         </Grid>
         <Grid item xs={6} display="flex" justifyContent="flex-end">
           <Typography>{duration}</Typography>
