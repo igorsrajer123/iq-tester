@@ -3,8 +3,26 @@ import { Box } from "@mui/material";
 interface DisplayImageProps {
   alt: string;
   src: string;
-  width?: number | string;
-  height?: number | string;
+  width?:
+    | number
+    | string
+    | {
+        xs: number | string;
+        sm?: number | string;
+        md?: number | string;
+        lg?: number | string;
+        xl?: number | string;
+      };
+  height?:
+    | number
+    | string
+    | {
+        xs: number | string;
+        sm?: number | string;
+        md?: number | string;
+        lg?: number | string;
+        xl?: number | string;
+      };
   lazyLoad?: boolean;
 }
 

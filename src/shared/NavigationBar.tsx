@@ -1,13 +1,16 @@
 import { Hidden, MenuItem } from "@mui/material";
+
 import {
   NavigationWrapper,
   NavigationGrid,
   NavigationGridItem,
   NavigationSelect,
 } from "src/styles/StyledNavigation";
-import Logo from "src/assets/iqhaven.webp";
 import { NakedLink, OceanLink } from "src/styles/StyledLink";
+
 import DisplayImage from "src/shared/DisplayImage";
+
+import Logo from "src/assets/iqhaven.webp";
 
 const NavigationBar = () => {
   return (
